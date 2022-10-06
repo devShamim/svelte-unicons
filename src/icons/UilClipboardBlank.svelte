@@ -1,0 +1,18 @@
+<script>
+  export let size = "24";
+  export let strokeWidth = 2;
+  let customClass = "";
+  export { customClass as class };
+
+  if (size !== "100%") {
+    size = size.slice(-1) === 'x'
+          ? size.slice(0, size.length -1) + 'em'
+          : parseInt(size) + 'px';
+  }
+</script>
+
+<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24"  stroke="currentColor" stroke-width="{strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="feather {customClass}">
+  <path
+  d="M17,4H16a2,2,0,0,0-2-2H10A2,2,0,0,0,8,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,4h4V5h0V6H10V4Zm8,15a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2h1a1,1,0,0,1,1,1Z"
+  />
+</svg>
