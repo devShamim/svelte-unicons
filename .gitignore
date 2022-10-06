@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+yarn.lock
+package-lock.json
+index.js
+index.mjs
+index.d.ts
+src
+/builds
