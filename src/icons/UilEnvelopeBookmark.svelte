@@ -1,18 +1,16 @@
-<script>
-  export let size = "24";
-  export let strokeWidth = 2;
-  let customClass = "";
-  export { customClass as class };
 
-  if (size !== "100%") {
-    size = size.slice(-1) === 'x'
-          ? size.slice(0, size.length -1) + 'em'
-          : parseInt(size) + 'px';
-  }
-</script>
+    <script>
+      export let size = "24";
+      let customClass = "";
+      export { customClass as class };
+    </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24"  stroke="currentColor" stroke-width="{strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="feather {customClass}">
-  <path
-  d="M21,15.26a1,1,0,0,0-1,1v3a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9.67l5.88,5.89a3,3,0,0,0,2.1.87,3,3,0,0,0,1.43-.36,1,1,0,0,0,.4-1.36,1,1,0,0,0-1.36-.4,1,1,0,0,1-1.15-.17L5.41,8.26H12a1,1,0,0,0,0-2H5a3,3,0,0,0-3,3v10a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3v-3A1,1,0,0,0,21,15.26Zm0-12H16a1,1,0,0,0-1,1v8a1,1,0,0,0,1.57.82l1.93-1.29,1.91,1.28a1.06,1.06,0,0,0,.59.19,1,1,0,0,0,.41-.09,1,1,0,0,0,.59-.91v-8A1,1,0,0,0,21,3.26Zm-1,7.12-.94-.63a1,1,0,0,0-1.12,0l-.94.63V5.26h3Z"
-  />
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 0 24 24" class="unicons envelope-bookmark {customClass}">
+      <path
+      d="M21,15.26a1,1,0,0,0-1,1v3a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9.67l5.88,5.89a3,3,0,0,0,2.1.87,3,3,0,0,0,1.43-.36,1,1,0,0,0,.4-1.36,1,1,0,0,0-1.36-.4,1,1,0,0,1-1.15-.17L5.41,8.26H12a1,1,0,0,0,0-2H5a3,3,0,0,0-3,3v10a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3v-3A1,1,0,0,0,21,15.26Zm0-12H16a1,1,0,0,0-1,1v8a1,1,0,0,0,1.57.82l1.93-1.29,1.91,1.28a1.06,1.06,0,0,0,.59.19,1,1,0,0,0,.41-.09,1,1,0,0,0,.59-.91v-8A1,1,0,0,0,21,3.26Zm-1,7.12-.94-.63a1,1,0,0,0-1.12,0l-.94.63V5.26h3Z"
+      />
+    </svg>
+    <style>
+      @import './utils/style.css';
+    </style>
+  

@@ -1,18 +1,16 @@
-<script>
-  export let size = "24";
-  export let strokeWidth = 2;
-  let customClass = "";
-  export { customClass as class };
 
-  if (size !== "100%") {
-    size = size.slice(-1) === 'x'
-          ? size.slice(0, size.length -1) + 'em'
-          : parseInt(size) + 'px';
-  }
-</script>
+    <script>
+      export let size = "24";
+      let customClass = "";
+      export { customClass as class };
+    </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24"  stroke="currentColor" stroke-width="{strokeWidth}" stroke-linecap="round" stroke-linejoin="round" class="feather {customClass}">
-  <path
-  d="M21,19H14.82A3,3,0,0,0,13,17.18V15h3a3,3,0,0,0,3-3V8s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.32.32,0,0,0-.09,0A.88.88,0,0,0,12.05,1H8A3,3,0,0,0,5,4v8a3,3,0,0,0,3,3h3v2.18A3,3,0,0,0,9.18,19H3a1,1,0,0,0,0,2H9.18a3,3,0,0,0,5.64,0H21a1,1,0,0,0,0-2ZM13,4.41,15.59,7H14a1,1,0,0,1-1-1ZM8,13a1,1,0,0,1-1-1V4A1,1,0,0,1,8,3h3V6a3,3,0,0,0,3,3h3v3a1,1,0,0,1-1,1Zm4,8a1,1,0,1,1,1-1A1,1,0,0,1,12,21Z"
-  />
-</svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 0 24 24" class="unicons file-network {customClass}">
+      <path
+      d="M21,19H14.82A3,3,0,0,0,13,17.18V15h3a3,3,0,0,0,3-3V8s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.32.32,0,0,0-.09,0A.88.88,0,0,0,12.05,1H8A3,3,0,0,0,5,4v8a3,3,0,0,0,3,3h3v2.18A3,3,0,0,0,9.18,19H3a1,1,0,0,0,0,2H9.18a3,3,0,0,0,5.64,0H21a1,1,0,0,0,0-2ZM13,4.41,15.59,7H14a1,1,0,0,1-1-1ZM8,13a1,1,0,0,1-1-1V4A1,1,0,0,1,8,3h3V6a3,3,0,0,0,3,3h3v3a1,1,0,0,1-1,1Zm4,8a1,1,0,1,1,1-1A1,1,0,0,1,12,21Z"
+      />
+    </svg>
+    <style>
+      @import './utils/style.css';
+    </style>
+  

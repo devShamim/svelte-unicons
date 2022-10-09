@@ -1,7 +1,7 @@
 {
   "name": "svelte-unicons",
   "description": "Unicon icons for Svelte based on IconScout/unicons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "http://github.com/devShamim",
   "repository": {
     "url": "devShamim/svelte-unicons",
@@ -25,24 +25,25 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.0",
     "@iconscout/unicons": "^3.0.5",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "cheerio": "^1.0.0-rc.12",
     "fs-extra": "^10.0.0",
     "pascal-case": "^3.1.2",
     "path": "^0.12.7",
     "rollup": "latest",
     "rollup-plugin-svelte": "latest",
-    "rollup-plugin-terser": "^7.0.2",
-	"cheerio": "^1.0.0-rc.12"
+    "rollup-plugin-terser": "^7.0.2"
   },
   "keywords": [
     "svelte",
     "unicons",
-	"unicon",
-	"iconscout",
-	"svelte unicon"
+    "unicon",
+    "iconscout",
+    "svelte unicon"
   ],
   "dependencies": {
+    "rollup-plugin-import-css": "^3.0.3",
     "svelte": "^3.38.2"
   }
 }
