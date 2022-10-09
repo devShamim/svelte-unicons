@@ -21,7 +21,7 @@ npm install --save-dev svelte-unicons
 </script>
 
 <UilEye size="24" />
-<UilArrowRight size="1.5x" />
+<UilArrowRight class="custom-class" />
 ```
 
 See all icons and usage here: https://iconscout.com/unicons/explore/line
