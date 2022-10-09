@@ -43,7 +43,6 @@
     "svelte unicon"
   ],
   "dependencies": {
-    "rollup-plugin-import-css": "^3.0.3",
     "svelte": "^3.38.2"
   }
 }

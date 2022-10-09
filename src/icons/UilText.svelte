@@ -10,7 +10,4 @@
       d="M17,6H7A1,1,0,0,0,7,8h4v9a1,1,0,0,0,2,0V8h4a1,1,0,0,0,0-2Z"
       />
     </svg>
-    <style>
-      @import './utils/style.css';
-    </style>
   

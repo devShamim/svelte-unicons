@@ -10,7 +10,4 @@
       d="M19,11H5a1,1,0,0,0,0,2H19a1,1,0,0,0,0-2Z"
       />
     </svg>
-    <style>
-      @import './utils/style.css';
-    </style>
   

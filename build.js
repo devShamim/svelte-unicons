@@ -35,9 +35,6 @@ Promise.all(icons.map(icon => {
       d="${svgPath}"
       />
     </svg>
-    <style>
-      @import './utils/style.css';
-    </style>
   `
 
   const filepath = `./src/icons/${icon.pascalCasedComponentName}.svelte`
