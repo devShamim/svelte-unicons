@@ -17,11 +17,13 @@ const icons = unicons.map(item => ({
 
 Promise.all(icons.map(icon => {
   const svgFile = fs.readFileSync(path.resolve(`node_modules/@iconscout/unicons/${icon.iconSvg}`), 'utf-8')
+
   let data = svgFile.replace(/<svg[^>]+>/gi, '').replace(/<\/svg>/gi, '')
-  const $ = cheerio.load(data, {
+  /* const $ = cheerio.load(data, {
     xmlMode: true
   })
-  const svgPath = $('path').attr('d')
+  const svgPath = $('path').attr('d') */
+  const svgPath = data.replace('<?xml version="1.0" encoding="utf-8"?>','')
 
   let component = `
     <script>
@@ -30,11 +32,7 @@ Promise.all(icons.map(icon => {
       export { customClass as class };
     </script>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 0 24 24" class="unicons ${icon.name} {customClass}">
-      <path
-      d="${svgPath}"
-      />
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 0 24 24" class="unicons ${icon.name} {customClass}">${svgPath}</svg>
   `
 
   const filepath = `./src/icons/${icon.pascalCasedComponentName}.svelte`
