@@ -2,7 +2,6 @@
 [![NPM](https://img.shields.io/npm/v/svelte-unicons.svg)](https://npmjs.com/package/svelte-unicons)
 [![License](https://img.shields.io/npm/l/svelte-unicons.svg)](LICENSE)
 [![NPM Downloads](https://img.shields.io/npm/dm/svelte-unicons.svg)](https://npmjs.com/package/svelte-unicons)
-[![test](https://github.com/devShamim/svelte-unicons/actions/workflows/test.yml/badge.svg)](https://github.com/devShamim/svelte-unicons/actions/workflows/test.yml)
 
 ## Install
 
