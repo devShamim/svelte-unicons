@@ -1996,7 +1996,7 @@ export { default as UilSnapchatSquare } from './icons/UilSnapchatSquare.svelte'
 
 export { default as UilSnowFlake } from './icons/UilSnowFlake.svelte'
 
-export { default as UilSnowflake } from './icons/UilSnowflake.svelte'
+export { default as UilSnowflake } from './icons/UilSnowFlake.svelte'
 
 export { default as UilSnowflakeAlt } from './icons/UilSnowflakeAlt.svelte'
 
